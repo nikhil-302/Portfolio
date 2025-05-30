@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="stylesheet" href="aboutMeStyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+    <section id="about">
+        <div class="img_container">
+            <img src="Images/mohammad-rahmani-_Fx34KeqIEw-unsplash.jpg" alt="Background Image" class="background-image">
+            <div class="nav">
+                <a href="main.html"><i class="fas fa-house"></i> Home</a>
+                <a href="aboutMe.html"><i class="fas fa-user"></i> About Me</a>
+                <a href="projects.html"><i class="fas fa-briefcase"></i> Projects</a>
+            </div>
+            <div class="content">
+                <h2>About Me</h2>
+                <p>Hi, I'm <b>Nikhil</b> from Yamunanagar, Haryana. I am a passionate Computer Science Engineering student with a strong interest in web development and product-based projects. I enjoy building functional and visually appealing websites.</p>
+                <h3>Education</h3>
+                <p>
+                    <ul>
+                        <li>Completed <b>10th Grade</b> in 2022 from <b>Sri Krishna Public School.</b></li>
+                        <li>Completed <b>12th Grade</b> in 2024 from <b>Sri Krishna Public School.</b></li>
+                        <li>Currently pursuing <b>Bachelor of Technology in Computer Science & Engineering</b> from <b>Lovely Professional University, Punjab.</b></li>
+                    </ul>
+                </p>
+                <h3>Skills & Interests</h3>
+                <p>
+                    <ul>
+                        <li>Proficient in <b>" C, Python, JavaScript "</b> and learning <b>" C++, Data Structures and Algorithms "</b>.</li>
+                        <li>Passionate about <b>" CyberSecurity "</b> and <b>" Problem Solving "</b>.</li>
+                        <li>Interested in <b>" Ai & ML "</b> and <b>" Exploring New Technologies "</b>.</li>
+                    </ul>
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <script>
+        const background = document.querySelector('.background-image');
+
+        document.addEventListener('mousemove', (e) => {
+            const x = (e.clientX / window.innerWidth - 0.5) * 10; // adjust multiplier for intensity
+            const y = (e.clientY / window.innerHeight - 0.5) * 10;
+            background.style.transform = `translate(-50%, -50%) scale(1.05) translate(${x}px, ${y}px)`;
+        });
+    </script>
+</body>
+</html>

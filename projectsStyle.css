@@ -1,0 +1,115 @@
+html, body{
+    padding: 0%;
+    margin: 0%;
+    height: 100%;
+}
+
+.img_container {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    position: relative;
+    background-image: url('Images/glen-carrie-f-Aspf02w84-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.img_container img {
+    width: 110%;
+    height: 110%;
+    object-fit: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: transform 0.1s ease-out;
+    z-index: 1;
+}
+
+
+.nav {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 2;
+    display: flex;
+    gap: 10px;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.nav a:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* Main Content */
+.content {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    z-index: 2;
+    border: solid;
+    width: 1000px;
+    background-color: rgba(0, 0, 0, 0.5); /* Transparent black background */
+    padding: 20px;
+    border-radius: 8px;
+    margin: auto;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    font-size: 1.1em;
+    line-height: 1.5em;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8); /* Small shadow for contrast */
+    
+}
+
+.content h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+    text-align: center;
+    /* border: solid; */
+}
+
+.content p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.para{
+    margin-left: 10px;
+    margin-bottom: 10px;
+    margin-top: 50px;
+    text-align: justify;
+}
+
+.visit-button {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.visit-button a {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  padding: 10px 25px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  display: inline-block;
+  box-shadow: 0 4px 10px rgba(0, 216, 200, 0.3);
+}
+
+.visit-button a:hover {
+  background-color: #00b0a2;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(0, 176, 162, 0.4);
+}
