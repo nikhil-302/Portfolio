@@ -44,8 +44,8 @@
         const background = document.querySelector('.background-image');
 
         document.addEventListener('mousemove', (e) => {
-            const x = (e.clientX / window.innerWidth - 0.5) * 10; // adjust multiplier for intensity
-            const y = (e.clientY / window.innerHeight - 0.5) * 10;
+            const x = (e.clientX / window.innerWidth - 0.5) * 40; // adjust multiplier for intensity
+            const y = (e.clientY / window.innerHeight - 0.5) * 40;
             background.style.transform = `translate(-50%, -50%) scale(1.05) translate(${x}px, ${y}px)`;
         });
     </script>
